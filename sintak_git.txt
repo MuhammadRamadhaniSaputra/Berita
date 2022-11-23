@@ -4,4 +4,6 @@ git commit -m "updates" # memberi tanda perubahan
 git branch -M master
 git remote add origin https://github.com/MuhammadRamadhaniSaputra/Berita.git
 git push origin master # untuk push project ke git online
-git checkout ... # untuk ubah branch
+git checkout (nama branch) # untuk ubah branch
+git pull origin (nama branch) # untuk memanggil file 
+git branch -D (nama branch) # untuk menghapus branch
