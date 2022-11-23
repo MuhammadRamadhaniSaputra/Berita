@@ -1,0 +1,6 @@
+git init # pastikan lokasi sudah benar
+git add . # menambahkann semua berkas kedalam git
+git commit -m "updates" # memberi tanda perubahan
+git branch -M master
+git remote add origin https://github.com/MuhammadRamadhaniSaputra/Berita.git
+git push origin master # untuk push project ke git online
