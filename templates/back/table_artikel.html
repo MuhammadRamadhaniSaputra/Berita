@@ -15,21 +15,12 @@
                                 <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" class="text-center">Nomor</th>
                                 <th data-field="name" data-sortable="true">Nama</th>
-                                <th data-field="salary" data-sortable="true">Nim</th>
-                                <th data-field="country" data-sortable="true">Prodi</th>
-                                <th data-field="city">Angkatan</th>
-                                <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Actions</th>
-                                {% comment %} <td class="text-sm">
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
-                                      <i class="material-icons text-secondary position-relative text-lg">visibility</i>
-                                    </a>
-                                    <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit product">
-                                      <i class="material-icons text-secondary position-relative text-lg">drive_file_rename_outline</i>
-                                    </a>
-                                    <a href="#" onclick="alert('Yakin Ingin Menghapus?')" data-bs-toggle="tooltip" data-bs-original-title="Delete product">
-                                      <i class="material-icons text-secondary position-relative text-lg">delete</i>
-                                    </a>
-                                  </td> {% endcomment %}
+                                <th data-field="nim" data-sortable="true">Nim</th>
+                                <th data-field="prodi" data-sortable="true">Prodi</th>
+                                <th data-field="angkatan">Angkatan</th>
+                                <th >actions</th>
+                        
+                        
                             </thead>
                             <tbody>
 
@@ -41,7 +32,17 @@
                                     <td>{{a.nim}}</td>
                                     <td>{{a.prodi}}</td>
                                     <td>{{a.angkatan}}</td>
-                                    <td></td>
+                                    <td class="">
+                                        <a href="#" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
+                                            <i class="ti-user"></i>
+                                        </a>
+                                        <a href="#" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
+                                            <i class="ti-pencil-alt"></i>
+                                        </a>
+                                        <a href="#" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                            <i class="ti-close"></i>
+                                        </a>
+                                    </td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
