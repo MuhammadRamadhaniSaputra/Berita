@@ -52,7 +52,7 @@ def update_mahasiswa(request, id):
         input_prodi = request.POST.get('prodi')
         input_angkatan= request.POST.get('angkatan')
 
-        get_angkatan = angkatan.objects.get(nama=input_angkatan)
+        get_angkatan = Angkatan.objects.get(nama=input_angkatan)
 
         get_mahasiswa.nama = input_nama
         get_mahasiswa.nim = input_nim
