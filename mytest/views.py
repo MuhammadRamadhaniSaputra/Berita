@@ -5,6 +5,8 @@ from django.contrib.auth import logout
 from django.http import HttpResponse
 from data.models import *
 import requests
+from data.forms import BeritaForms
+from users.models import Biodata
 
 # def home(request):
 #     template_name = "front/home.html"
@@ -53,6 +55,14 @@ def login(request):
 
 def registrasi(request):
     template_name = "account/register.html"
+    if request.method == "POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        nama_depan = request.POST.get('nama_depan')
+        nama_belakang = request.POST.get('nama_belakang')
+        email = request.POST.get('email')
+        telp = request.POST.get('telp')
+        print(username,password,nama_depan,nama_belakang,email,telp)
     context = {
         'title':'registrasi'
     }
