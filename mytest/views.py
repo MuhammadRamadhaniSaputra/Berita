@@ -7,6 +7,9 @@ from data.models import *
 import requests
 from data.forms import BeritaForms
 from users.models import Biodata
+from django.contrib.auth.models import User
+from django.db import  transaction
+from django.contrib.auth.hashers import make_password
 
 # def home(request):
 #     template_name = "front/home.html"
@@ -62,7 +65,22 @@ def registrasi(request):
         nama_belakang = request.POST.get('nama_belakang')
         email = request.POST.get('email')
         telp = request.POST.get('telp')
-        print(username,password,nama_depan,nama_belakang,email,telp)
+        try:
+            with transaction.atomic():
+                User.objects.create(
+                    username = username,
+                    password = make_password(password),
+                    first_name = nama_depan,
+                    last_name = nama_belakang,
+                    email = email,
+                )
+                get_user = User.objects.get(username = username)
+                Biodata.objects.create(
+                    user = get_user,
+                    telp = telp,
+                )
+            return redirect(home)
+        except:pass
     context = {
         'title':'registrasi'
     }

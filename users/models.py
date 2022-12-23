@@ -8,4 +8,4 @@ class Biodata(models.Model):
     
 
     def __str__(self):
-        return "{} - {}".format(self.user, self.user)
+        return "{} - {}".format(self.user, self.telp)

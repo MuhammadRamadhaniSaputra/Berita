@@ -46,7 +46,7 @@ def delete_artikel(request, id):
 @login_required
 def artikel(request):
     template_name = "back/table_artikel.html"
-    artikel = Berita.objects.all()
+    artikel = Berita.objects.filter(nama = request.user)
     context = {
         'title':'tabel artikel',
         'artikel':artikel,
@@ -60,7 +60,9 @@ def tambah_artikel(request):
     if request.method == "POST":
         forms_artikel = BeritaForms(request.POST)
         if forms_artikel.is_valid():
-            forms_artikel.save()
+            art = forms_artikel.save(commit=False)
+            art.nama = request.user
+            art.save()
         return redirect(artikel)
     else:
         forms_artikel = BeritaForms()
