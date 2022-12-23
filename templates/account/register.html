@@ -1,12 +1,9 @@
-
 {% load static %}
-<!-- Created By CodingNepal -->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="{% static 'css/stylee.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
@@ -15,15 +12,21 @@
    <form method="POST" class="box">
     {% csrf_token %}
        <div class="header">
-           <h4>Login To Your Account</h4>
+           <h4>registrasi To Your Account</h4>
        </div>
        <div class="login-area">
         <label>Username</label>
            <input name="username" type="text" class="username" placeholder="Username">
-           <label>Password</label>
+           <label >Password</label>
            <input name="password" type="password" class="password" placeholder="Password">
+           <label >Nama Depan</label>
+           <input name="nama_depan" type="text" class="username" placeholder="Nama Depan">
+           <label >Nama Belakang</label>
+           <input name="nama_belakang" type="text" class="username" placeholder="Nama Belakang">
+           <label>Email</label>
+           <input name="email" type="text" class="username" placeholder="Email">
            <input type="submit" value="Login" class="submit">
-           <b><a href="{% url 'registrasi' %}">Registrasi</a></b>
+           <b><a href="{% url 'login' %}">Back</a></b>
        </div>
    </form> 
 </body>

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     #Install apps
     'data',
+    'users',
     'ckeditor',
     'ckeditor_uploader',
 
