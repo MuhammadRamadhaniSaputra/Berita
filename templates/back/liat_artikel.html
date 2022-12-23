@@ -1,0 +1,63 @@
+{% extends 'back/base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <form class="form-horizontal" method="POST" enctype"multipart/form-data">
+                        {% csrf_token %}
+                        <div class="card-header">
+                            <h4 class="card-title">
+                                {{title}}
+                            </h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Title</label>
+                                <div class="col-md-9">
+                                    {{artikel.title}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Description</label>
+                                <div class="col-md-9">
+                                    {{artikel.description}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Kategori</label>
+                                <div class="col-md-9">
+                                    {{artikel.kategori}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">date</label>
+                                <div class="col-md-9">
+                                    {{artikel.date}}
+                                </div>
+                            </div>
+                            {% comment %} <div class="form-group">
+                                <label class="col-md-3 control-label">Gambar</label>
+                                <div class="col-md-9">
+                                    <img src="#" alt="">
+                                    <input name="image" type="file" value="upload gambar"/>
+                                </div>
+                            </div> {% endcomment %}
+                        <div class="card-footer text-right">
+                            <div class="form-group">
+                                <label class="col-md-3"></label>
+                                <div class="col-md-9">
+                                    <a class="btn btn-infp" href="{% url 'tabel_artikel' %}">Kembali</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- end card -->
+            </div> <!--  end col-md-6  -->
+        </div> <!-- end row -->
+    </div>
+</div>
+{% endblock content %}
+

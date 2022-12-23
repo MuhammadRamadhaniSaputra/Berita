@@ -1,0 +1,377 @@
+{% extends 'front/base.html' %} 
+{% load static %}
+
+{% block content %} 
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-7 px-0">
+          <div class="owl-carousel main-carousel position-relative">
+              <div class="position-relative overflow-hidden" style="height: 500px;">
+                  <img class="img-fluid h-100" src="{% static 'img/mbampe.jpg' %}" style="object-fit: cover;">
+                  <div class="overlay">
+                      <div class="mb-2">
+                          <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                              >Olahraga</a>
+                      </div>
+                      <a class="h2 m-0 text-white text-uppercase font-weight-bold" >MENGINTIP DAFTAR TOP SKOR PIALA DUNIA...</a>
+                  </div>
+              </div>
+              <div class="position-relative overflow-hidden" style="height: 500px;">
+                  <img class="img-fluid h-100" src="{% static 'img/modroc.jpg' %}" style="object-fit: cover;">
+                  <div class="overlay">
+                      <div class="mb-2">
+                          <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                              >Olahraga</a>
+                      </div>
+                      <a class="h2 m-0 text-white text-uppercase font-weight-bold" >MESKI SUDAH 37 TAHUN, LUKA MODRIC BELUM MAU PENSIUN DARI TIMNAS KROASIA...</a>
+                  </div>
+              </div>
+              <div class="position-relative overflow-hidden" style="height: 500px;">
+                  <img class="img-fluid h-100" src="{% static 'img/messi.jpg' %}" style="object-fit: cover;">
+                  <div class="overlay">
+                      <div class="mb-2">
+                          <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                              >Olahraga</a>
+                      </div>
+                      <a class="h2 m-0 text-white text-uppercase font-weight-bold" >BAWA ARGENTINA JUARA PIALA DUNIA, LIONEL MESSI DAPAT UCAPAN SELAMAT DARI RONALDO...</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-5 px-0">
+          <div class="row mx-0">
+              <div class="col-md-6 px-0">
+                  <div class="position-relative overflow-hidden" style="height: 250px;">
+                      <img class="img-fluid w-100 h-100" src="{% static 'img/brazil.jpg' %}" style="object-fit: cover;">
+                      <div class="overlay">
+                          <div class="mb-2">
+                              <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                  >Olahraga</a>
+                          </div>
+                          <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" >Kutukan Ranking 1 Dunia Berlanjut, Brazil Gagal Ke Semifinal...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 px-0">
+                  <div class="position-relative overflow-hidden" style="height: 250px;">
+                      <img class="img-fluid w-100 h-100" src="{% static 'img/kane.jpg' %}" style="object-fit: cover;">
+                      <div class="overlay">
+                          <div class="mb-2">
+                              <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                  >Olahraga</a>
+                          </div>
+                          <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" >INGGRIS MENJADI TIM YANG PALING SERING KANDAS DI PEREMPAT FINAL PIALA DUNIA...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 px-0">
+                  <div class="position-relative overflow-hidden" style="height: 250px;">
+                      <img class="img-fluid w-100 h-100" src="{% static 'img/maroko.jpg' %}" style="object-fit: cover;">
+                      <div class="overlay">
+                          <div class="mb-2">
+                              <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                  >Olahraga</a>
+                          </div>
+                          <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" >Perjuangan Hebat Maroko di Piala Dunia 2022, Cetak Sejarah Berkat Doa Ibu...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 px-0">
+                  <div class="position-relative overflow-hidden" style="height: 250px;">
+                      <img class="img-fluid w-100 h-100" src="{% static 'img/qatar.jpg' %}" style="object-fit: cover;">
+                      <div class="overlay">
+                          <div class="mb-2">
+                              <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                  >Olahraga
+                                </a>
+                          </div>
+                          <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" >PIALA DUNIA 2022 QATAR PUNYA SEGALANYA: KEJUTAN, DRAMA, TANGISAN, FINAL DAHSYAT...</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-dark py-3 mb-3">
+  <div class="container">
+      <div class="row align-items-center bg-dark">
+          <div class="col-12">
+              <div class="d-flex justify-content-between">
+                  <div class="bg-primary text-dark text-center font-weight-medium py-2" style="width: 170px;">Breaking News</div>
+                  <div class="owl-carousel tranding-carousel position-relative d-inline-flex align-items-center ml-3"
+                      style="width: calc(100% - 170px); padding-right: 90px;">
+                      <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales</a></div>
+                      <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid pt-5 mb-3">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="m-0 text-uppercase font-weight-bold">Featured News</h4>
+        </div>
+        <div class="owl-carousel news-carousel carousel-item-4 position-relative">
+            {% for title,desc,nama,tanggal,link, i in w %} 
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid h-100" src="{{i}}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                            href="#">{{nama}}</a><br>
+                        <a class="text-white" href="#"><small>{{tanggal}}</small></a>
+                    </div>
+                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" target="_blank" href="{{link}}">{{desc|truncatechars:30}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Latest News</h4>
+                            <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                        </div>
+                    </div>
+                    {% for title,desc,nama,tanggal,link, i in mylist%} 
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            <img class="img-fluid w-100" src="{{i}}" style="object-fit: cover;">
+                            <div class="bg-white border border-top-0 p-4">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">{{nama}}</a>
+                                    <a class="text-body" href=""><small>{{tanggal}}</small></a>
+                                </div>
+                                <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" target="_blank" href="{{link}}">{{title}}</a>
+                                <p class="m-0">{{desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <!-- Social Follow Start -->
+                <div class="mb-3">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Follow Us</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-3">
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
+                            <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Fans</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
+                            <i class="fab fa-twitter text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Followers</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #0185AE;">
+                            <i class="fab fa-linkedin-in text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Connects</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #C8359D;">
+                            <i class="fab fa-instagram text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Followers</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #DC472E;">
+                            <i class="fab fa-youtube text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Subscribers</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none" style="background: #055570;">
+                            <i class="fab fa-vimeo-v text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Followers</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Social Follow End -->
+
+                <!-- Ads Start -->
+                <div class="mb-3">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Advertisement</h4>
+                    </div>
+                    <div class="bg-white text-center border border-top-0 p-3">
+                        <a href=""><img class="img-fluid" src="{% static 'img/news-800x500-2.jpg' %}" alt=""></a>
+                    </div>
+                </div>
+                <!-- Ads End -->
+
+                <!-- Popular News Start -->
+                <div class="mb-3">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Tranding News</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-3">
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" src="{% static 'img/news-110x110-1.jpg' %}" alt="">
+                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" src="{% static 'img/news-110x110-2.jpg' %}" alt="">
+                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" src="{% static 'img/news-110x110-3.jpg' %}" alt="">
+                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" src="{% static 'img/news-110x110-4.jpg' %}" alt="">
+                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" src="{% static 'img/news-110x110-5.jpg' %}" alt="">
+                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popular News End -->
+
+                <!-- Tags Start -->
+                <div class="mb-3">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Tags</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-3">
+                        <div class="d-flex flex-wrap m-n1">
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tags End -->
+            </div>
+        </div>
+    </div>
+</div>
+{% comment %} <section class="py-6 bg-gray-100">
+  <div class="container">
+    <div class="row">
+      {% for a in berita %}
+      <div class="col-lg-4 mb-lg-0 mb-4">
+        <div class="card">
+          <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
+            <a class="d-block blur-shadow-image">
+              <img src="{{ a.image.url}}" alt="img-blur-shadow" class="img-fluid border-radius-lg">
+            </a>
+          </div>
+          <div class="card-body pt-2">
+            <a href="javascript:;" class="h3 d-block text-dark">
+              {{ a.title}}
+            </a>
+            <p class="card-description mb-4">
+              {{ a.description }}
+            </p>
+            <div class="author align-items-center">
+              <div class="name ps-3">
+                <span></span>
+                <div class="stats">
+                  <small>Posted on 28 February</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {%endfor%} 
+    </div>
+  </div>
+</section> {% endcomment %}
+
+{% comment %} <h1 class="text-center mt-3">Berita Terbaru</h1>
+<div class="container">
+  <a class="btn btn-success" href="{% url 'tambah_berita' %}">+ tambah Berita</a>
+  <div class="row">
+    {% for a in berita %}
+     <div class="col-4 mt-4">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="{{ a.image.url}}" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">{{ a.title}}</h2>
+              <p class="card-text">{{ a.description }}</p>
+              <a href"#"><b>Baca Selengkapnya ...</a></b> 
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+     </div>
+    {%endfor%} 
+  </div>
+</div> {% endcomment %}
+
+{% comment %} <h1 class="text-center mt-3">Berita Terbaru</h1>
+
+<div class="container">
+  <div class="row">
+    {% for a in berita %}
+    <div class="col-3 mt-3">
+    <div class="card-deck">
+      <div class="card shadow-lg">
+        <img src="https://picsum.photos/200" class-"card-img-top" alt="">
+        <div class="card-body">
+            <p class="card-text"> {{ a.title}} </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>  {% endcomment %}
+{% endblock content %} 

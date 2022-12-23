@@ -1,0 +1,92 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BizNews - Free News Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free HTML Templates" name="keywords">
+        <meta content="Free HTML Templates" name="description">
+    
+        <!-- Favicon -->
+        <link href=  "{% static 'img/favicon.ico' %}" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href= "{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-4 text-uppercase text-primary">Biz<span class="text-white font-weight-normal">News</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'single_news' %}" class="nav-item nav-link">Single News</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" style="width: 100%; max-width: 100px;">
+                <div class="navbar-nav mr-auto py-0">
+                {% if request.user.is_anonymous %}
+                <a href="{% url 'login' %}" class="nav-item nav-link active ">
+                    Login
+                </a>
+                {% else %}
+                <a href="{% url 'dasbord' %}" class="nav-item nav-link active " target="_blank">
+                    Dasbord
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+  </div>
+{% block content %}
+
+{% endblock content %}
+<div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+    <p class="m-0 text-center">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. 
+    
+    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+    Design by <a href="https://htmlcodex.com">HTML Codex</a></p>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+    <!-- If you are using TypeKit.com uncomment this code otherwise you can delete it -->
+    <!--
+    <script src="https://use.typekit.net/[your kit code here].js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    -->
+
+    <!-- If you have retina @2x images on your server which can be sent to iPhone/iPad/MacRetina, please uncomment the next line, otherwise you can delete it -->
+	<!-- <script src="assets/js/retina.min.js"></script> -->
+
+</html>

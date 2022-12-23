@@ -1,0 +1,24 @@
+{% extends 'front/base.html' %} 
+
+{% block content %}
+<div class="container">
+    <form method="POST" encytpe="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Title</label>
+          <input type="text" class="form-control" name="title" value="{{ get_berita.title }}">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">description</label>
+          <input type="text" class="form-control" name="description" value="{{ get_berita.description }}">
+        </div>
+        <div class="mb-3">
+          <label for="img">Select image:</label>
+          <input type="file" id="img" name="image" accept="image/*">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+</div>
+{% endblock content %}
+

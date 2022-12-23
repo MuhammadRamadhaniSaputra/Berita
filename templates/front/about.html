@@ -1,0 +1,173 @@
+{% extends 'front/base.html' %} 
+{% load static %}
+{% block content %}
+<div class="wrapper">
+    <div class="parallax filter-black">
+        <div class="parallax-image">
+            <img src= {% static 'assets/img/test.JPEG' %}>
+        </div>
+        <div class="small-info">
+            <h1>About Us</h1>
+            <h3></h3>
+        </div>
+    </div>
+
+    <div class="section">
+           <div class="container">
+            <center>
+               <h2 class="section-title">We care about our work</h2>
+               <div class="row">
+                   <div class="">
+                       <p style="text-align:center">
+                        Untuk nama website yang saya berikan bernapa Info.com, yang di mana di
+                        dalam website ini berisi berita-berita terbaru atau yang lagi trending, jadi untuk
+                        yang sedang cari berita terbaru atau yang lagi hot beritanya di website info.com
+                        sudah menyediakannya, jadi pengguna tinggal baca atau liat-liat. </p>
+                   </div>
+               </div>
+           </div>
+    </div><!-- section -->
+
+    <div class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Meet our Team <small> (example 1)</small></h2>
+            <div class="team-presentation">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src= {% static 'assets/img/thumb.jpg' %}>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                    <img class="avatar" src= {% static 'assets/img/tim_80x80.png' %} alt="..."/>
+                                    <h4 class="title">Dani <br />
+                                        <small>Mahasiswa</small>
+                                    </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> UMKT, Samarinda <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> 2011102441087@umkt.ac.id
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-facebook btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-social btn-google btn-simple"><i class="fa fa-google-plus-square"></i></button>
+
+                            </div>
+                        </div> <!-- end card-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end section meet our team -->
+
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Working Flow</h2>
+            <div class="clients-presentation">
+                <div class="row">
+                    <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-note2"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 1. Research </h3>
+                                <p class="text-muted">We've been working with Apple for a new Touch ID. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-scissors"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 2. Design </h3>
+                                <p class="text-muted">There were many changes for the new design of Windows. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-tools"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 3. Develop </h3>
+                                <p class="text-muted">Working with big data about business is never easy.</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-paint"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 4. Polish </h3>
+                                <p class="text-muted">We developed the Dropbox App for iOS devices. </p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end section meet our clients -->
+
+            </div>
+        </div>
+    </div> <!-- end section meet our clients -->
+
+    <footer class="footer footer-black">
+            <div class="container">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-area pull-right">
+                    <a class="btn btn-social btn-facebook btn-simple">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a class="btn btn-social btn-twitter btn-simple">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-social btn-pinterest btn-simple">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love
+                </div>
+            </div>
+        </footer>
+
+
+</div>
+{% endblock content %}
