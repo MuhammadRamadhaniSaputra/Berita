@@ -6,6 +6,7 @@ import requests
 from django.contrib.auth.decorators import login_required
 from .forms import BeritaForms
 from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -16,11 +17,11 @@ def id_operator(user):
         return False
 
 @login_required
-@user_passes_test(id_operator)
 def dasbord(request):
+    if request.user.groups.filter(name='Operator').exists():
+        request.session['is_operator'] = 'operator'
+        
     template_name = "back/dasbord.html"
-    # for a in artikel:
-    #     print(a)
     context = {
         'title':'tabel artikel',
     }
@@ -99,10 +100,13 @@ def edit_artikel(request, id):
 
 
 @login_required
+@user_passes_test(id_operator)
 def users(request):
     template_name = "back/tabel_users.html"
+    list_user = User.objects.all()
     context = {
         'title':'tabel users',
+        'list_user': list_user
 
     }
     return render(request, template_name, context)

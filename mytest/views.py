@@ -51,20 +51,16 @@ def login(request):
     }
     return render(request, template_name, context)
 
+def registrasi(request):
+    template_name = "account/register.html"
+    context = {
+        'title':'registrasi'
+    }
+    return render(request, template_name, context)
+
 def logout_view(request):
     logout(request)
     return redirect('home')
-
-
-# def blog_page(request):
-#     template_name = "front/blog_page.html"
-#     list_page = Berita.objects.all()
-#     context = {
-#         'title':'blog_page',
-#         'page':list_page
-
-#     }
-#     return render(request, template_name, context)
 
 def blog_page(request):
     url = "https://newsapi.org/v2/top-headlines?country=id&apiKey=60adcaea2f2b4b109fcd70ea9be1091e"

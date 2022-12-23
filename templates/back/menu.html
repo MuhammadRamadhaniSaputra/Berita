@@ -14,7 +14,7 @@
             <div class="clearfix"></div>
 
             <div class="collapse" id="collapseExample">
-                <ul class="nav">
+                <ul class="nav">            
                     <li>
                         <a href="{% url 'logout' %}">
                             <span class="sidebar-mini">L</span>
@@ -32,11 +32,13 @@
                 <p>Tabel Artikel</p>
             </a>
         </li>
+        {% if request.session.is_operator == 'operator'%}
         <li>
             <a href="{% url 'tabel_users' %}">
                 <i class="ti-calendar"></i>
                 <p>Tabel User</p>
             </a>
         </li> 
+        {% endif %}
     </ul>
 </div>
