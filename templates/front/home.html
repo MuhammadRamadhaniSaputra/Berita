@@ -213,59 +213,20 @@
                 <!-- Popular News Start -->
                 <div class="mb-3">
                     <div class="section-title mb-0">
-                        <h4 class="m-0 text-uppercase font-weight-bold">Tranding News</h4>
+                        <h4 class="m-0 text-uppercase font-weight-bold">Berita Terbaru</h4>
                     </div>
                     <div class="bg-white border border-top-0 p-3">
+                        {% for a in post %}
                         <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" src="{% static 'img/news-110x110-1.jpg' %}" alt="">
                             <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                 <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">{{a.kategori}}</a>
+                                    <a class="text-body" href="#"><small>{{a.date}}</small></a>
                                 </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{a.title}}</a>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" src="{% static 'img/news-110x110-2.jpg' %}" alt="">
-                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" src="{% static 'img/news-110x110-3.jpg' %}" alt="">
-                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" src="{% static 'img/news-110x110-4.jpg' %}" alt="">
-                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" src="{% static 'img/news-110x110-5.jpg' %}" alt="">
-                            <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                    <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
                 <!-- Popular News End -->
@@ -277,16 +238,8 @@
                     </div>
                     <div class="bg-white border border-top-0 p-3">
                         <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary m-1">Olahraga</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary m-1">Teknologi</a>
                         </div>
                     </div>
                 </div>
@@ -295,83 +248,4 @@
         </div>
     </div>
 </div>
-{% comment %} <section class="py-6 bg-gray-100">
-  <div class="container">
-    <div class="row">
-      {% for a in berita %}
-      <div class="col-lg-4 mb-lg-0 mb-4">
-        <div class="card">
-          <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
-            <a class="d-block blur-shadow-image">
-              <img src="{{ a.image.url}}" alt="img-blur-shadow" class="img-fluid border-radius-lg">
-            </a>
-          </div>
-          <div class="card-body pt-2">
-            <a href="javascript:;" class="h3 d-block text-dark">
-              {{ a.title}}
-            </a>
-            <p class="card-description mb-4">
-              {{ a.description }}
-            </p>
-            <div class="author align-items-center">
-              <div class="name ps-3">
-                <span></span>
-                <div class="stats">
-                  <small>Posted on 28 February</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {%endfor%} 
-    </div>
-  </div>
-</section> {% endcomment %}
-
-{% comment %} <h1 class="text-center mt-3">Berita Terbaru</h1>
-<div class="container">
-  <a class="btn btn-success" href="{% url 'tambah_berita' %}">+ tambah Berita</a>
-  <div class="row">
-    {% for a in berita %}
-     <div class="col-4 mt-4">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="{{ a.image.url}}" alt="Card image cap">
-            <div class="card-body">
-              <h2 class="card-title">{{ a.title}}</h2>
-              <p class="card-text">{{ a.description }}</p>
-              <a href"#"><b>Baca Selengkapnya ...</a></b> 
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-     </div>
-    {%endfor%} 
-  </div>
-</div> {% endcomment %}
-
-{% comment %} <h1 class="text-center mt-3">Berita Terbaru</h1>
-
-<div class="container">
-  <div class="row">
-    {% for a in berita %}
-    <div class="col-3 mt-3">
-    <div class="card-deck">
-      <div class="card shadow-lg">
-        <img src="https://picsum.photos/200" class-"card-img-top" alt="">
-        <div class="card-body">
-            <p class="card-text"> {{ a.title}} </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>  {% endcomment %}
 {% endblock content %} 

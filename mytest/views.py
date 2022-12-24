@@ -143,10 +143,12 @@ def home(request):
     mylist = zip(title, desc, nama, tanggal,link, img)
     w = zip(title, desc, nama, tanggal,link, img)
     q = zip(title, desc, nama, tanggal,link, img)
+    list_page = Berita.objects.all()
     context ={
         'mylist':mylist,
         'w':w,
-        'q':q
+        'q':q,
+        'post':list_page
         }
    
 
